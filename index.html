@@ -6,35 +6,48 @@
     <meta name="keywords" content="Viktoriya,cv, resume" >
     <meta name="descrption" content="Это сайт - резюме Виктории Пикулик">
     <title>Viktoriya Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="imgs/photo.jpg"  alt="Виктория Пикулик" width="150">
-    <h1>Виктория Пикулик</h1><br>
+<div class="container">
+    <div class="info">
+    <img src="imgs/photo.jpg"  alt="Виктория Пикулик" class="avatar">
+
+    <div class="info-text">
+    <h1>Виктория Пикулик</h1>
 
 <p>Я филолог, который хочет много зарабатывать, <br>
-    поэтому я решила обучиться программированию и получить <em>классную, востребованную</em> профессию.<br>
-   <strong> Я уверена, что у меня все получится.</strong> 
+    поэтому я решила обучиться программированию и получить классную, востребованную профессию.<br>
+    Я уверена, что у меня все получится.
 </p>
-<p>Я увлекаюсь спортом, хожу в тренажерный зал, соблюдаю режим и контролирую питание</p>
+<p>Я увлекаюсь спортом, хожу в тренажерный зал, соблюдаю режим и контролирую питание.</p>
+<div class="seti">
 <h4>Список социальных сетей</h4>
 <a href="https://t.me/vikaonlineminsk" target="_blank"> Telegram |</a>
 <a href="https://www.instagram.com/pikulik_viktoriya" target="_blank" > Instagram |</a>
-<h4>Мои хобби</h4>
-<ul>
+</div>
+</div>
+</div>
+<div class="card hobbi">
+<h2>Мои хобби</h2>
+<ul class="list">
     <li>Музыка</li>
     <li>Спорт</li>
     <li>Книги</li>
     <li>Кино</li>
 </ul>
+</div>
+<div class="card work">
 <h2>Опыт работы</h2>
-<table width="500">
-    <thead>
+<table class="table">
+   <!-- <thead class="thead">
         <tr>
             <th>Название</th>
             <th>Должность</th>
             <th>Год</th>
         </tr>
     </thead>
+-->
     <tbody>
         <tr>
           <td>Магазин одежды</td> 
@@ -53,23 +66,27 @@
           </tr>
     </tbody>
 </table>
-<h2>Связаться со мной</h2>
-<form>
-    <div>
+</div>
+
+<form action="/" class="form">
+    <h2>Связаться со мной</h2>
+    <div class="form-row">
+    <div class="form-group">
         <label for="name">Ваше имя:</label>
         <input type="text" id="name" placeholder="Введите имя">
     </div>
-    <div>
+    <div class="form-group">
         <label for="email">Ваш Email:</label>
         <input type="email" id="email" placeholder="Введите email">
     </div>
-    <div>
+    </div>
+    <div class="form-group">
         <label for="message">Ваше сообщение:</label>
-        <br>
          <textarea id="message" cols="40" rows="10" placeholder="Введите сообщение..."></textarea>
     </div> 
 
-    <button type="submit">Отправить!</button>
+    <button type="submit" class="btn">Отправить!</button>
 </form>
+</div>
 </body>
 </html> 
